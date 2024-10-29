@@ -1,0 +1,43 @@
+nav ul{
+    display: flex;
+    gap: 98px;
+    font-size: 22px;
+    justify-content: center;
+    color: white;
+}
+li{
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    transition: all 0.8s;
+
+}
+nav{
+    padding: 18px;
+   
+}
+li::after{
+    content: "";
+    position: absolute;
+    display: block;
+    color: white;
+    height: 2px;
+    width: 0%;
+    left:0%;
+    top: 100%;
+    background-color:white;
+    transition: width 0.8s;
+    
+}
+li:hover::after{
+    width: 100%;
+    left: 0%;
+}
+li:hover{
+    color: white;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+}
+a{
+    color:rgb(128, 47, 47);
+    text-decoration: none;
+}
